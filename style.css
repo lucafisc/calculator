@@ -32,16 +32,16 @@ body {
   border: 1.5px solid hsl(0deg 0% 78%);
   box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, 0.09);
     padding: 15px;
+
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-end;
+
+  font-size: 37px;
+  color: rgb(134, 134, 134);s
 }
 
-.display {
-    font-size: 37px;
-    color: rgb(134, 134, 134);
-
-}
 
 .buttons-container {
   display: flex;
@@ -95,9 +95,9 @@ body {
   border: 1.5px solid rgb(163, 163, 163);
 }
 
-.button:hover {
+.button:active {
   box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, 0.09);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 #equal {
@@ -112,7 +112,34 @@ width: 167px;
   border-radius: 41px;
 }
 
-img {
+.backspace-icon {
     width: 40px;
     height: auto;
+}
+
+.operation {
+    font-size: 18px;
+
+    padding-top: 30px;
+}
+
+.copy-icon {
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+}
+
+.copy-icon:active {
+    filter: brightness(0) saturate(100%) invert(63%) sepia(60%) saturate(3845%) hue-rotate(343deg) brightness(97%) contrast(90%);
+}
+
+.answer-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.operation-container {
+    display: flex;
 }
